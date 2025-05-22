@@ -1,13 +1,13 @@
 .page-container {
   width: calc(100% - 19.5625rem); // mesma largura da sidebar
   margin-left: 19.5625rem;
-  padding: 3rem;
   background: #f1f1f1;
   min-height: 100vh;
   box-sizing: border-box;
   transition: all 0.5s ease;
   padding: 2rem;
   flex-direction: column;
+  padding-bottom: 60px;
 }
 
 .adoption-card {

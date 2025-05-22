@@ -6,6 +6,7 @@
    padding: 8px 40px 8px 35px; 
    overflow: hidden;
    z-index: 1;
+   
 }
 
 
@@ -81,12 +82,14 @@
 }
 
 .logo-imagem {
-  width: 35px;
-  height: auto;
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
   border-radius: 50px;
 }
 
 .user-name {
      padding: 10px 5px 5px 2px;
      color: #323232;
+     font-size: 15px;
 }
