@@ -1,0 +1,92 @@
+.header-container {
+  width: calc(100% - 19.5625rem); // mesma largura da sidebar
+  margin-left: 19.5625rem;
+ display: flex;
+ align-items: center;
+   padding: 8px 40px 8px 35px; 
+   overflow: hidden;
+   z-index: 1;
+}
+
+
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+.search-bar {
+   background-color: #f1f1f1; 
+     border: none;
+  padding: 10px 40px 10px 12px; 
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  width: 450px;
+    color: #415DA7;
+    outline: none;
+     transition: background-color 0.2s ease, width 0.3s ease;
+}
+
+.search-bar:focus {
+    background-color: #e0e0e0;
+    width: 490px;
+}
+.btn-lupa {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #415DA7;
+  font-size: 16px;
+}
+
+.search-bar::placeholder {
+  color: #415DA7;
+  opacity: 0.6; 
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+     padding: 10px 40px 10px 40px; 
+     gap: 20px;
+}
+
+.icons i {
+  background-color: #f0f0f0;
+  color: #415DA7;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 20px;
+  cursor: pointer;
+   transition: bbackground-color 0.2s ease; 
+}
+
+.icons i:hover {
+  background-color: #e0e0e0;
+}
+
+.user-box {
+ display: flex;
+  gap: 5px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.logo-imagem {
+  width: 35px;
+  height: auto;
+  border-radius: 50px;
+}
+
+.user-name {
+     padding: 10px 5px 5px 2px;
+     color: #323232;
+}

@@ -1,0 +1,34 @@
+<div class="page-container">
+
+  <div class="adocao-card">
+    <div class="card-header">
+      <p>Suas instituições</p>
+    </div>
+    <div class="pet-list">
+      <div class="pet-card" *ngFor="let pet of petsRecentes">
+        <img [src]="pet.imagem" alt="{{ pet.nome }}" />
+        <p class="pet-nome">{{ pet.nome }}</p>
+        <p class="pet-info">{{ pet.genero }}</p>
+      </div>
+      <div class="spacer"></div>
+        <span class="seta-azul">&gt;</span>
+    </div>
+    <button class="btn-vermais">Ver mais</button>
+  </div>
+<br>
+  <div class="adocao-card">
+    <div class="card-header">
+        <p class="card-segundo">Suas instituições</p>
+    </div>
+    <div class="pet-list">
+      <div class="pet-card" *ngFor="let pet of petsDestaque">
+        <img [src]="pet.imagem" alt="{{ pet.nome }}" />
+        <p class="pet-nome">{{ pet.nome }}</p>
+        <p class="pet-info">{{ pet.genero }}</p>
+      </div>
+      <div class="spacer"></div>
+        <span class="seta-azul">&gt;</span>
+    </div>
+    <button class="btn-vermais">Ver mais</button>
+  </div>
+</div>

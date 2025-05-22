@@ -1,0 +1,34 @@
+<div class="page-container">
+  <!-- Conteúdo principal da página -->
+  <div class="main-content">
+    <!-- pode ser sua lista de adoções, feed, etc. -->
+  </div>
+
+  <!-- Lateral direita com os cards -->
+  <div class="right-sidebar">
+    <div class="suggestion-card">
+      <p class="titulo">Baseado em suas instituições</p>
+     <div class="institution" *ngFor="let inst of instituicoes">
+    <img src="/logoapets3.png" alt="imagem-logo" class="logo-imagem">
+    <div class="institution-info">
+      <p class="institution-name">{{ inst.nome }}</p>
+      <p class="institution-followers">{{ inst.seguidores }} seguidores</p>
+    </div>
+  </div>
+  <p>ver mais..</p>
+  </div>
+  
+  <div class="suggestion-card">
+  <p class="titulo">Pets que podem roubar seu coração</p>
+  <div class="pet-card" *ngFor="let pet of pets">
+    <img src="/logoapets3.png" alt="imagem-logo" class="logo-imagem">
+    <div class="pet-info">
+      <p class="pet-name">{{ pet.nome }}</p>
+      <p class="pet-idade">{{ pet.info }}</p>
+    </div>
+  </div>
+  <p>ver mais..</p>
+</div>
+
+  </div>
+</div>

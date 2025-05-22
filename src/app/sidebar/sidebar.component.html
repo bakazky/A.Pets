@@ -1,0 +1,36 @@
+<div class="sidenav">
+    <div class="logo-container">
+        <button class="logo">
+            <img src="/logoapets.png" alt="logoapets" class="logo-up">
+        </button>
+    </div>
+    <div class="sidenav-nav">
+       <li class="sidenav-nav-item" *ngFor="let item of items; let i = index">
+  <a class="sidenav-nav-link"
+     [routerLink]="item.routeLink"
+     routerLinkActive="active"
+     [routerLinkActiveOptions]="{ exact: true }">
+    <i class="sidenav-link-icon" [class]="item.icon"></i>
+    <span class="sidenav-link-text">{{ item.label }}</span>
+  </a>
+</li>
+    </div>
+    <hr class="linha">
+    <div class="sidebar-section">
+  <div class="section-header">
+    <h4 class="section-title">Minhas instituições</h4>
+    <span class="section-badge">19</span>
+  </div>
+
+  <div class="institution" *ngFor="let inst of instituicoes">
+    <img src="/logoapets3.png" alt="imagem-logo" class="logo-imagem">
+    <div class="institution-info">
+      <p class="institution-name">{{ inst.nome }}</p>
+      <p class="institution-followers">{{ inst.seguidores }} seguidores</p>
+    </div>
+  </div>
+
+  <button class="ver-mais">Ver mais</button>
+</div>
+    
+</div>
