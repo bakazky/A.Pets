@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainComponent } from './main/main.component'; // <- ajuste os caminhos
+import { MainComponent } from './main/main.component'; 
 import { AdocoesPageComponent } from './adocoes-page/adocoes-page.component';
 import { ExplorarPageComponent } from './explorar-page/explorar-page.component';
 import { DoarPageComponent } from './doar-page/doar-page.component';
