@@ -1,0 +1,40 @@
+<div class="page-container">
+ 
+  <button class="btn-classificar">
+        <i class="fas fa-bars"></i>
+    Classificar</button>
+
+  <div class="adocao-card">
+    <div class="card-header">
+      <p>Adoções postadas recentemente</p>
+    </div>
+    <div class="pet-list">
+      <div class="pet-card" *ngFor="let pet of petsRecentes">
+        <img [src]="pet.imagem" alt="{{ pet.nome }}" />
+        <p class="pet-nome">{{ pet.nome }}</p>
+        <p class="pet-info">{{ pet.genero }}, {{ pet.idade }}</p>
+      </div>
+      <div class="spacer"></div>
+        <span class="seta-azul">&gt;</span>
+    </div>
+    <button class="btn-vermais">Ver mais</button>
+  </div>
+<br>
+  <div class="adocao-card">
+    <div class="card-header">
+      <span class="card-segundo">
+        <i class="fa fa-paw"></i> 
+        ONG > Adoções em destaque</span>
+    </div>
+    <div class="pet-list">
+      <div class="pet-card" *ngFor="let pet of petsDestaque">
+        <img [src]="pet.imagem" alt="{{ pet.nome }}" />
+        <p class="pet-nome">{{ pet.nome }}</p>
+        <p class="pet-info">{{ pet.genero }}, {{ pet.idade }}</p>
+      </div>
+      <div class="spacer"></div>
+        <span class="seta-azul">&gt;</span>
+    </div>
+    <button class="btn-vermais">Ver mais</button>
+  </div>
+</div>

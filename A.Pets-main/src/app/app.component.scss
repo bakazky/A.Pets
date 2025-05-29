@@ -1,0 +1,21 @@
+.page-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+   height: 100vh;
+   background-color: #f1f1f1;
+}
+router-outlet {
+  flex: 1;
+}
+
+.main-content {
+    flex: 1;
+  min-width: 0; /* evita quebra por overflow */
+  overflow: auto;
+}
+
+

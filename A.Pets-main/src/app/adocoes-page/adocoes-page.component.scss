@@ -1,0 +1,95 @@
+.page-container {
+  width: calc(100% - 19.5625rem); // mesma largura da sidebar
+  margin-left: 19.5625rem;
+  padding: 3rem;
+  background: #f1f1f1;
+  min-height: 100vh;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+  padding: 2rem;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.adoption-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  padding: 16px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 1200px;
+  max-width: 1400px;
+}
+
+.pet-image {
+  width: 220px;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 10px;
+  
+}
+
+.pet-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.pet-name {
+  font-size: 18px;
+  margin-bottom: 4px;
+  color:#415DA7;
+}
+
+.pet-info {
+  color: #FFD27D;
+  font-weight: bold;
+   margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.status {
+  color: #415DA7;
+  font-weight: 600;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+.pet-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  flex-direction: column;
+}
+
+.btn-blue {
+  background-color: #415DA7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  width: 350px;
+   cursor: pointer;
+  font-size: 15px;
+}
+
+.btn-yellow {
+  background-color: #FFD27D;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  width: 350px;
+  cursor: pointer;
+  font-size: 15px;
+
+}
+
+.pet-org {
+  margin-top: 50px;
+}
