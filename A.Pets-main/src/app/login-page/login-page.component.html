@@ -1,0 +1,57 @@
+<div class="login-layout">
+    <!-- icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <main>
+        <div class="apets-logo"></div>
+        <div class="login-header">
+            <h3>Registro</h3>
+            <h5>Já possui uma conta? <a href="">Log in</a></h5>
+            <h5><a href="">Se você é uma instituição, clique aqui</a></h5>
+        </div>
+        <!-- FORMULÁRIO -->
+        <form action="" class="login-form">
+            <div class="form-email">
+                <label for="userEmail">E-mail</label>
+                <div>
+                    <span><i class="fa fa-envelope"></i></span>
+                    <input type="email" id="userEmail" placeholder="Digite seu e-mail">
+                </div>
+            </div>
+            <div class="form-userName">
+                <label for="userName">Usuário</label>
+                <div>
+                    <span><i class="fa fa-user"></i></span>
+                    <input type="text" id="userName" placeholder="Digite seu nome de usuário">
+                </div>
+            </div>
+            <div class="form-password">
+                <label for="userPassword">Senha</label>
+                <div class="input-container">
+                    <span><i class="fa fa-lock"></i></span>
+                    <input [type]="showPassword ? 'text' : 'password'" id="userPassword" placeholder="Digite sua senha">
+                    <span class="toggle-password" (click)="showPassword = !showPassword">
+                        <i class="fa" [ngClass]="showPassword ? 'fa-eye-slash' : 'fa-eye'"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-passwordConfirm">
+                <label for="userPasswordConfirm">Confirmar Senha</label>
+                <div class="input-container">
+                    <span><i class="fa fa-lock"></i></span>
+                    <input [type]="showPasswordConfirm ? 'text' : 'password'" id="userPasswordConfirm"
+                        placeholder="Confirme sua senha">
+                    <span class="toggle-password" (click)="showPasswordConfirm = !showPasswordConfirm">
+                        <i class="fa" [ngClass]="showPasswordConfirm ? 'fa-eye-slash' : 'fa-eye'"></i>
+                    </span>
+                </div>
+            </div>
+
+            <input type="button" value="Registrar">
+        </form>
+    </main>
+    <!-- img pet -->
+    <aside></aside>
+</div>

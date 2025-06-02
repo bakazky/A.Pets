@@ -5,6 +5,7 @@ import { AdocoesPageComponent } from './adocoes-page/adocoes-page.component';
 import { ExplorarPageComponent } from './explorar-page/explorar-page.component';
 import { DoarPageComponent } from './doar-page/doar-page.component';
 import { ConfiguracoesPageComponent } from './configuracoes-page/configuracoes-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'explorar-page', component: ExplorarPageComponent },
   { path: 'doar-page', component: DoarPageComponent },
   { path: 'configuracoes-page', component: ConfiguracoesPageComponent },
+  { path: 'login-page', component: LoginPageComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -16,6 +16,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { RightSidebarComponent } from './right-sidebar/right-sidebar.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { RightSidebarComponent } from './right-sidebar/right-sidebar.component';
     ConfiguracoesPageComponent,
     HeaderComponent,
     RightSidebarComponent,
+    LoginPageComponent,
   ],
   imports: [
     BrowserModule,
