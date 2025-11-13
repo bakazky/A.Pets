@@ -15,7 +15,7 @@
 .adoption-card {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
   padding: 16px;
   margin-bottom: 24px;
   display: flex;
@@ -30,7 +30,7 @@
   height: 290px;
   object-fit: cover;
   border-radius: 10px;
-  
+
 }
 
 .pet-details {
@@ -43,21 +43,25 @@
 .pet-name {
   font-size: 18px;
   margin-bottom: 4px;
-  color:#415DA7;
+  color: #415DA7;
 }
 
 .pet-info {
   color: #FFD27D;
   font-weight: bold;
-   margin-top: 0;
-    margin-bottom: 5px;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .status {
   color: #415DA7;
   font-weight: 600;
-   margin-top: 0;
-   margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.status-span {
+  color: #FFD27D;
 }
 
 .pet-buttons {
@@ -74,7 +78,7 @@
   border-radius: 10px;
   padding: 12px;
   width: 350px;
-   cursor: pointer;
+  cursor: pointer;
   font-size: 15px;
 }
 
